@@ -1,7 +1,13 @@
 <?php $sliders = $this->apiModel->get(null,'carousel'); ?>
 <div class="row">
 	<h2 class="text-center">Sliders</h2>
-	<div  style="padding: 0 5%;">	
+	
+
+	<div  style="padding: 0 5%;">
+	<div class="text-right">
+		<a href="<?php echo base_url('panel/sliderAdd'); ?>" class="btn btn-default">Nuevo Slider</a>
+	</div>
+	<br>	
 		<table >
 		<thead>
 			<tr>
@@ -28,3 +34,5 @@
 	</table>
 	</div>
 </div>
+
+

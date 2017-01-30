@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/jquery.dataTables.min.css')?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/css/sweetalert.css')?>">
 	<script src="<?php echo base_url('assets/js/jquery-3.1.1.min.js'); ?>"></script>
 </head>
 <body>

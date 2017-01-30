@@ -8,6 +8,9 @@ class Panel extends CI_Controller {
 		parent::__construct();
 		$this->load->model('util_model','util');
 		$this->load->model('api_model','apiModel');
+
+
+		//VERIFICATION LOG
 		$valor = $this->session->userdata('username');
 		if(empty($valor)){
 			redirect(base_url('log'),'refresh');
@@ -28,7 +31,7 @@ class Panel extends CI_Controller {
 	}
 
 	public function sliders(){
-		$this->_todoTemplate('sliders');
+		$this->_todoTemplate('slider/listar');
 	}
 
 	public function servicios(){
@@ -59,7 +62,11 @@ class Panel extends CI_Controller {
 
 	public function sliderdetail(){
 		$id = $this->input->get('id');
-		$this->_todoTemplateWithData('item_slider',$id);
+		$this->_todoTemplateWithData('slider/editar',$id);
+	}
+
+	public function sliderAdd(){
+		$this->_todoTemplate('slider/add');
 	}
 
 

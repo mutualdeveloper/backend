@@ -37,3 +37,8 @@ body,html{
 	width: 100%;
 }
 
+#menu .item-seleccionado{
+	background-color: #232222;
+	border-left: thick solid #2780E3;
+	color: white;
+}
